@@ -9,4 +9,9 @@ router.get('/', (req, res) => {
 	})
 });
 
+router.delete('/:id', (req, res) => {
+	Robots.splice([req.params.id], 1)
+	res.redirect('/robots')
+});
+
 module.exports = router;

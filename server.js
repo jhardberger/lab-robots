@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
 
+const methodOverride = require('method-override');
+
 const robotsController = require('./controllers/robots');
+
+app.use(methodOverride('_method'));
 
 app.use('/robots', robotsController);
 

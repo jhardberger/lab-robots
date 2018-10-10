@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>EDIT</h1>
+	<br>
+	<form method="POST" action="/robots/<%=id%>?_method=PUT">
+		<input type="text" name="name" value="<%=robot.name%>"/><br>
+		<input type="text" name="origin" value="<%=robot.origin%>"/><br>
+		<input type="submit" name="" value="submit edit">
+	</form>
+	<br>
+	<a href="/robots">HOME</a>
+
+</body>
+</html>

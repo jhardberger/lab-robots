@@ -9,7 +9,7 @@
 	<ul>
 		<%robots.forEach((elem,i) => {%>
 		<li>
-			<%=elem.name%> (<a href="/robots/<%=i%>/edit">edit</a>)
+			<a href="/robots/<%=i%>"><%=elem.name%></a> (<a href="/robots/<%=i%>/edit">edit</a>)
 			<form action="/robots/<%=i%>?_method=DELETE" method="POST">
 				<input type="submit" value="delete">
 			</form>

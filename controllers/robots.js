@@ -10,6 +10,14 @@ router.get('/', (req, res) => {
 	})
 });
 
+//show route
+router.get('/:id', (req, res) => {
+	res.render('show.ejs', {
+		robot: Robots[req.params.id]
+	})
+});
+
+
 //delete route
 router.delete('/:id', (req, res) => {
 	Robots.splice([req.params.id], 1)

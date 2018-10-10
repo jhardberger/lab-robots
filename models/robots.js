@@ -16,4 +16,6 @@ const robots = [
 		origin: 'Star Trek'
 	}
 
-]
+];
+
+module.exports = robots;

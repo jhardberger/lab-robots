@@ -13,7 +13,8 @@ router.get('/', (req, res) => {
 //show route
 router.get('/:id', (req, res) => {
 	res.render('show.ejs', {
-		robot: Robots[req.params.id]
+		robot: Robots[req.params.id],		
+		id: req.params.id
 	})
 });
 

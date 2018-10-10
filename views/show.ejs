@@ -10,7 +10,12 @@
 		<h2><%=robot.name%></h2>
 		Origin: <%=robot.origin%>
 
+		<form action="/robots/<%=id%>/edit">
+			<input type="submit" value="edit">	
+		</form>
+		
 		<br/>
 		<a href="/robots">HOME</a>
+
 </body>
 </html>
